@@ -1,0 +1,73 @@
+---
+title: "NSDP Data Processing"
+author: "Rara Soro"
+date: "`r format(Sys.Date(), '%d %b %Y')`"
+output: 
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '2'
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Load Library, echo = FALSE, warning=FALSE, message=FALSE}
+library(knitr) # Nice tables
+library(kableExtra) # Extra nice tables
+library(dplyr) #Calculation and other functions
+```
+
+## Introduction
+
+The Vanuatu National Statistics Office (VNSO) undertook the extended Household Income and Expenditure Survey (HIES) for a period of 12 month and was refered to as National Sustainable Development Plan (NSDP) Baseline Survey.
+
+C:\RTraining\Repositories\nsdp-R-processing\NSDP-Data-Processing
+
+```{r Setting working directory, echo = FALSE, eval=FALSE}
+wd <- file.path("c:", "RTraining", "Repositories", "nsdp-R-processing", "NSDP-Data-Processing")
+setwd(wd)
+
+```
+
+```{r Load Dataset, echo=FALSE}
+nsdp_data <- read.csv(file.path("data", "cover.csv"), header = TRUE)
+head(nsdp_data)
+nsdp_dem <- read.csv(file.path("data", "demography.csv"), header = TRUE)
+head(nsdp_dem)
+
+```
+
+## Basic Statistics
+### Number of Household by Province
+```{r Basic HHStatistics, echo=FALSE, warning=FALSE}
+nsdp_tab1 <- nsdp_data %>%
+  group_by(id1_Province) %>%
+  summarize(Total_Household = round(sum(fweight)))
+
+
+kable(nsdp_tab1)%>%
+  kable_styling(bootstrap_options = c("striped", "hover", "border", "condensed", "responsive")) %>%
+  kable_styling(font_size = 10) 
+```
+
+
+### Population by Province
+```{r Basic Population Statistics, echo=FALSE, warning=FALSE}
+nsdp_tab2 <- nsdp_dem %>%
+  group_by(id1_Province) %>%
+  summarize(Total_Population = round(sum(fweight)))
+
+
+kable(nsdp_tab2)%>%
+  kable_styling(bootstrap_options = c("striped", "hover", "border", "condensed", "responsive")) %>%
+  kable_styling(font_size = 10) 
+```
+
+
+
