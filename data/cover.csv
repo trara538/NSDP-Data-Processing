@@ -1,4 +1,4 @@
-interview__key,fweight,id1_Province,id3_Area_Council,id2_Team,id4_EA,id5_HH_ID,id6_Interview_Round,id8_Village_Area,id9_Replacement_Houshold,id10_Set,id11_Time,id12__Latitude,id12__Longitude,id12__Accuracy,id12__Altitude,id12__Timestamp,h1901,h1902,interview__status,interviewer_id,interview__duration,urb_rur,hhsize
+interview__key,fweight,Province,Area_Council,Team,EA,HHID,Interview_Round,Village,HHReplacement,id10_Set,id11_Time,id12__Latitude,id12__Longitude,id12__Accuracy,id12__Altitude,id12__Timestamp,h1901,h1902,interview__status,interviewer_id,interview__duration,urb_rur,hhsize
 00-04-58-74,32.84086682,Malampa,402,41,4020021,41078,31,Vetura,2,,2020-02-06T20:16:12,-15.90732872,167.2995365,49,81,2020-02-06T03:02:33,1,5389121,130,Malam_Interv411,00.01:35:38,2,5
 00-04-61-30,3.171067387,Torba,103,11,1030041,11299,15,Avare,2,,2019-07-03T22:22:59,-13.70067402,167.6326689,11,71,2019-07-04T02:54:01,2,,130,Torba_Interv111,00.01:34:58,2,2
 00-05-68-96,14.29678968,Malampa,401,41,4010071,41021,21,Malwabay,2,,2019-09-24T01:18:50,-15.98907173,167.1858591,15,102,2019-09-24T05:44:31,1,7116322,130,Malam_Interv413,00.01:42:02,2,1

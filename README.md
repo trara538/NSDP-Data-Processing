@@ -11,7 +11,6 @@
 This is repository will be used the processing of the NSDP Baseline Survey Data being contacted from 2019 to 2020. The Survey was contacted by the Vanuatu National Statistics Office (VNSO) in collaboration with Department of Strategic Planning and Aid Policy Coordination (DESPAC).
 
 # NSDP Pillars
-<hr />
 ## Society Pillar
 
 #### Soc1 - Vibrant Cultural Identity <br />
@@ -21,7 +20,7 @@ This is repository will be used the processing of the NSDP Baseline Survey Data 
 #### Soc5 - Peace and Justice <br />
 #### Soc6 - Strong and Effective Institutions
 
-<hr>
+
 ## Environment Pillar
 
 #### Env1 - Food and Nutrition Security <br />
@@ -30,7 +29,7 @@ This is repository will be used the processing of the NSDP Baseline Survey Data 
 #### Env4 - Natural Resource Management <br />
 #### Env5 - Ecosystems and Biodiversity 
 
-<hr>
+
 ## Economy Pillar
 
 #### Eco1 - Stable and Equitable Growth <br />
